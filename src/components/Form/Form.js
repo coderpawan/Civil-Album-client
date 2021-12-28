@@ -52,7 +52,7 @@ const Form = ({ currentId, setCurrentId }) => {
         className={`${classes.root} ${classes.form}`}
         onSubmit={handleSubmit}
       >
-        <Typography variant="h6">
+        <Typography variant="h6" className={classes.heading}>
           {currentId ? `Editing "${post.title}"` : "Album of Civil"}
         </Typography>
         <TextField
@@ -68,7 +68,7 @@ const Form = ({ currentId, setCurrentId }) => {
         <TextField
           name="title"
           variant="outlined"
-          label="Title"
+          label="Album name"
           fullWidth
           value={postData.title}
           onChange={(e) => setPostData({ ...postData, title: e.target.value })}
@@ -86,7 +86,7 @@ const Form = ({ currentId, setCurrentId }) => {
         <TextField
           name="tags"
           variant="outlined"
-          label="Tags"
+          label="Hashtags"
           fullWidth
           value={postData.tags}
           onChange={(e) =>

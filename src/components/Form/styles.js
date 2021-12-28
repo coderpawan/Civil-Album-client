@@ -21,4 +21,8 @@ export default makeStyles((theme) => ({
   buttonSubmit: {
     marginBottom: 10,
   },
+  heading: {
+    fontWeight: 700,
+    fontFamily: "cursive",
+  },
 }));
